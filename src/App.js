@@ -1,15 +1,19 @@
 import './App.css'
 
-import Header from "./components/Header"
-import Menu from "./components/Menu"
-import Music from "./components/Music"
+import Header from "./components/Header/Header"
+import Menu from "./components/Menu/Menu"
+import Music from "./components/Music/Music"
+import News from "./components/News/News";
 
 const App = () => {
     return (
         <block className="root">
             <Header/>
             <Menu/>
-            <Music/>
+            <div className='root-content'>
+                {/*<Music/>*/}
+                <News/>
+            </div>
         </block>
     );
 }

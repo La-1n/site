@@ -1,0 +1,9 @@
+.song {
+    margin-top: 5px;
+    padding: 10px;
+    background-color: lightseagreen;
+}
+
+.song img {
+    width: 100px;
+}

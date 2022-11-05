@@ -1,7 +1,13 @@
 .root {
-  font-family: mecha, serif;
-  padding: 10px;
-  display: grid;
-  grid-template-areas: "header header" "menu music";
-  background-color: blue;
+    font-family: mecha, serif;
+    margin: 10px;
+    padding: 5px;
+    display: grid;
+    grid-template-areas: "header header" "menu content";
+    background-color: darkcyan;
+    border: 2px solid black;
+}
+
+.root-content {
+    grid-area: content;
 }
