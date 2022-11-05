@@ -3,16 +3,17 @@
     width: 100%;
     height: 100%;
     font-family: mecha, serif;
-    background-color: black;
+    background: black;
 }
 
 .root {
-    margin: 10px;
+    margin: 10px auto;
+    width: 700px;
     padding: 5px;
     display: grid;
-    grid-template-areas: "header header" "menu content";
-    grid-template-columns: 150px 1fr;
-    background-color: darkcyan;
+    grid-template-areas: "header header" "content menu";
+    grid-template-columns: 1fr 150px;
+    background: darkcyan;
     border: 2px solid white;
 }
 

@@ -1,12 +1,12 @@
-.music {
+.home {
     outline: 1px solid #ddd;
     border-top: 2px solid #fff;
     margin: 5px;
     padding: 10px;
-    background-color: lightgreen;
+    background: orchid;
 }
 
 .title {
-    text-shadow: 1px 1px white;
     text-align: center;
+    text-shadow: 1px 1px white;
 }

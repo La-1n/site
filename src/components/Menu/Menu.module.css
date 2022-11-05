@@ -1,14 +1,15 @@
 .menu {
     box-sizing: border-box;
-    border: white dashed;
+    border: white 2px dashed;
     height: 150px;
     margin: 5px;
     padding: 10px;
     grid-area: menu;
-    background-color: cornflowerblue;
+    background: cornflowerblue;
 }
 .title {
     text-align: center;
+    text-shadow: 1px 1px white;
 }
 
 .item {
