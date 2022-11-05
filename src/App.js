@@ -14,12 +14,12 @@ const App = () => {
         <BrowserRouter>
             <div className="site">
                 <block className="root">
-                    <Header/>
-                    <Menu/>
+                    <Header />
+                    <Menu />
                     <Routes className='root-content'>
-                        <Route path='/' element={<Home/>}/>
-                        <Route path='/news' element={<News/>}/>
-                        <Route path='/music' element={<Music/>}/>
+                        <Route path='/' element={<Home />}/>
+                        <Route path='/news' element={<News />}/>
+                        <Route path='/music' element={<Music />}/>
                     </Routes>
                 </block>
             </div>
