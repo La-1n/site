@@ -7,7 +7,9 @@ const Song = (props) => {
             <img
                 src={props.image}
                 alt=''/>
-            <i>{props.name}</i>
+            <div className={style.title}>
+                <i>{props.title}</i>
+            </div>
         </div>
     );
 }

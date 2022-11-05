@@ -1,9 +1,17 @@
 .song {
-    margin-top: 5px;
+    margin-top: 10px;
     padding: 10px;
     background-color: lightseagreen;
+    display: flex;
 }
 
 .song img {
+    box-sizing: border-box;
     width: 100px;
+    border: white solid;
+}
+
+.title {
+    margin: 10px;
+    color: white;
 }

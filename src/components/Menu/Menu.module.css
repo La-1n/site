@@ -1,7 +1,24 @@
 .menu {
+    box-sizing: border-box;
+    border: white dashed;
     height: 150px;
     margin: 5px;
     padding: 10px;
     grid-area: menu;
     background-color: cornflowerblue;
+}
+.title {
+    text-align: center;
+}
+
+.item {
+    text-align: center;
+}
+
+.item a {
+    color: white;
+}
+
+.item a.active {
+    color: blue;
 }

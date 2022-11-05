@@ -3,6 +3,7 @@
     padding: 10px;
     grid-area: header;
     background-color: brown;
+    text-align: center;
 }
 
 .header img {

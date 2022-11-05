@@ -11,14 +11,16 @@ import News from "./components/News/News";
 const App = () => {
     return (
         <BrowserRouter>
-            <block className="root">
-                <Header/>
-                <Menu/>
-                <Routes className='root-content'>
-                    <Route path='/news' element={<News/>}/>
-                    <Route path='/music' element={<Music/>}/>
-                </Routes>
-            </block>
+            <div className="site">
+                <block className="root">
+                    <Header/>
+                    <Menu/>
+                    <Routes className='root-content'>
+                        <Route path='/news' element={<News/>}/>
+                        <Route path='/music' element={<Music/>}/>
+                    </Routes>
+                </block>
+            </div>
         </BrowserRouter>
     );
 }
