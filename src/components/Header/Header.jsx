@@ -1,3 +1,4 @@
+import React from 'react';
 import style from './Header.module.css'
 import logo from '../../logo.svg'
 

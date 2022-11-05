@@ -1,12 +1,13 @@
+import React from 'react';
 import style from './Menu.module.css'
 
 const Menu = () => {
     return (
         <nav className={style.menu}>
+            МЕНЮ
             <ul>
-                <li><a href="/Projects/React/site/public#">Главная</a></li>
-                <li><a href="/Projects/React/site/public#">О нас</a></li>
-                <li><a href="/Projects/React/site/public#">Контакты</a></li>
+                <li><a href="/news">Новости</a></li>
+                <li><a href="/music">Музыка</a></li>
             </ul>
         </nav>
     );

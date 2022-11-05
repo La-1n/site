@@ -1,3 +1,6 @@
+import React from 'react';
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+
 import './App.css'
 
 import Header from "./components/Header/Header"
@@ -7,14 +10,16 @@ import News from "./components/News/News";
 
 const App = () => {
     return (
-        <block className="root">
-            <Header/>
-            <Menu/>
-            <div className='root-content'>
-                {/*<Music/>*/}
-                <News/>
-            </div>
-        </block>
+        <BrowserRouter>
+            <block className="root">
+                <Header/>
+                <Menu/>
+                <Routes className='root-content'>
+                    <Route path='/news' element={<News/>}/>
+                    <Route path='/music' element={<Music/>}/>
+                </Routes>
+            </block>
+        </BrowserRouter>
     );
 }
 

@@ -1,3 +1,4 @@
+import React from 'react';
 import style from './Song.module.css'
 
 const Song = (props) => {

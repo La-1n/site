@@ -4,6 +4,7 @@
     padding: 5px;
     display: grid;
     grid-template-areas: "header header" "menu content";
+    grid-template-columns: 200px 1fr;
     background-color: darkcyan;
     border: 2px solid black;
 }

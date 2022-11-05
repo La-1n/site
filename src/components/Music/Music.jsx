@@ -1,3 +1,4 @@
+import React from 'react';
 import style from './Music.module.css'
 import Song from './Song/Song'
 
