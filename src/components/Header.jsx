@@ -1,8 +1,9 @@
-import logo from '.././logo.svg';
+import style from './Header.module.css'
+import logo from '.././logo.svg'
 
 const Header = () => {
     return (
-        <div className="header">
+        <div className={style.header}>
             <img src={logo} alt=""/>
             CORBIN
         </div>

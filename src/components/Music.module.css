@@ -1,0 +1,5 @@
+.music {
+    padding: 10px;
+    grid-area: music;
+    background-color: lightgreen;
+}

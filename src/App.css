@@ -5,25 +5,3 @@
   grid-template-areas: "header header" "menu music";
   background-color: blue;
 }
-
-.header {
-  padding: 10px;
-  grid-area: header;
-  background-color: brown;
-}
-
-.header img {
-  width: 100px;
-}
-
-.menu {
-  padding: 10px;
-  grid-area: menu;
-  background-color: cornflowerblue;
-}
-
-.music {
-  padding: 10px;
-  grid-area: music;
-  background-color: lightgreen;
-}

@@ -1,16 +1,17 @@
-import './App.css';
-import Header from "./components/Header";
-import Menu from "./components/Menu";
-import Music from "./components/Music";
+import './App.css'
+
+import Header from "./components/Header"
+import Menu from "./components/Menu"
+import Music from "./components/Music"
 
 const App = () => {
-  return (
-    <div className="root">
-        <Header/>
-        <Menu/>
-        <Music/>
-    </div>
-  );
+    return (
+        <block className="root">
+            <Header/>
+            <Menu/>
+            <Music/>
+        </block>
+    );
 }
 
 export default App;
