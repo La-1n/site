@@ -14,13 +14,13 @@ const App = (props) => {
     return (
         <BrowserRouter>
             <div className="site">
-                <block className="root">
+                <block className="body">
                     <Header />
                     <Menu />
                     <Routes className='root-content'>
                         <Route path='/' element={<Home />}/>
                         <Route path='/news' element={<News />}/>
-                        <Route path='/music' element={<Music data={props.songsData} />}/>
+                        <Route path='/music' element={<Music data={props.state.songs} />}/>
                         <Route path='/music/song' element={<Info />}/>
                     </Routes>
                 </block>
