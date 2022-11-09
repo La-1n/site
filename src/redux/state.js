@@ -1,3 +1,5 @@
+import {rerenderTree} from "../render";
+
 import songsData from './songs'
 import postsData from "./posts";
 
@@ -13,6 +15,7 @@ export let addPost = (text) => {
     };
 
     state.posts.push(newPost);
+    rerenderTree(state);
 }
 
 export default state

@@ -4,7 +4,7 @@ import Post from './Post/Post';
 
 const News = (props) => {
     //Data
-    let posts = props.data.map(post => <Post time={post.time} text={post.text}/>);
+    let posts = props.data.map(post => <Post time={post.time} text={post.text}/>).reverse();
 
     //Ref
     let newPostElement = React.createRef();
