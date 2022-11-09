@@ -7,13 +7,13 @@ const Menu = () => {
         <div className={style.menu}>
             <div className={style.title}>МЕНЮ</div>
             <div className={style.item}>
-                <NavLink exact to="/">Главная</NavLink>
+                <NavLink to="/">Главная</NavLink>
             </div>
             <div className={style.item}>
-                <NavLink exact to="/news">Новости</NavLink>
+                <NavLink to="/news">Новости</NavLink>
             </div>
             <div className={style.item}>
-                <NavLink exact to="/music">Музыка</NavLink>
+                <NavLink to="/music">Музыка</NavLink>
             </div>
         </div>
     );

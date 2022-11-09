@@ -6,4 +6,13 @@ let state = {
     posts: postsData
 }
 
+export let addPost = (text) => {
+    let newPost = {
+        time: new Date().toLocaleString(),
+        text: text
+    };
+
+    state.posts.push(newPost);
+}
+
 export default state
