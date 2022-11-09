@@ -1,13 +1,12 @@
-.home {
+.info {
     outline: 1px solid #ddd;
     border-top: 2px solid #fff;
     margin: 5px;
     padding: 10px;
-    background: orchid;
-    border-radius: 5px;
+    background-color: lightseagreen;
 }
 
 .title {
-    text-align: center;
     text-shadow: 1px 1px white;
+    text-align: center;
 }

@@ -1,10 +1,12 @@
 .song {
+    position: relative;
     outline: 1px solid #ddd;
     border-top: 2px solid #fff;
     margin-top: 10px;
     padding: 10px;
     background-color: lightseagreen;
     display: flex;
+    border-radius: 5px;
 }
 
 .song img {
@@ -15,5 +17,15 @@
 
 .title {
     margin: 10px;
+    color: white;
+}
+
+.info {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.info a {
     color: white;
 }

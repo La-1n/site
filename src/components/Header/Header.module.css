@@ -1,9 +1,12 @@
 .header {
     margin: 5px;
     padding: 10px;
+    outline: 1px solid #ddd;
+    border-top: 2px solid #fff;
     grid-area: header;
     text-align: center;
     background: brown;
+    border-radius: 5px;
 }
 
 .header img {

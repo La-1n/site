@@ -1,5 +1,6 @@
 import React from 'react';
 import style from './Song.module.css'
+import {NavLink} from "react-router-dom";
 
 const Song = (props) => {
     return (
@@ -9,6 +10,9 @@ const Song = (props) => {
                 alt=''/>
             <div className={style.title}>
                 <i>{props.title}</i>
+            </div>
+            <div className={style.info}>
+                <NavLink to={"/music/song"}>инфа</NavLink>
             </div>
         </div>
     );

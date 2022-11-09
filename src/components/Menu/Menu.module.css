@@ -1,11 +1,12 @@
 .menu {
     box-sizing: border-box;
-    border: white 2px dashed;
+    border: white double;
     height: 150px;
     margin: 5px;
     padding: 10px;
     grid-area: menu;
     background: cornflowerblue;
+    border-radius: 5px;
 }
 .title {
     text-align: center;
