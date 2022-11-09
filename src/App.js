@@ -15,13 +15,13 @@ const App = (props) => {
         <BrowserRouter>
             <div className="site">
                 <block className="body">
-                    <Header />
-                    <Menu />
+                    <Header/>
+                    <Menu/>
                     <Routes className='root-content'>
-                        <Route path='/' element={<Home />}/>
-                        <Route path='/news' element={<News />}/>
-                        <Route path='/music' element={<Music data={props.state.songs} />}/>
-                        <Route path='/music/song' element={<Info />}/>
+                        <Route path='/' element={<Home/>}/>
+                        <Route path='/news' element={<News data={props.state.posts}/>}/>
+                        <Route path='/music' element={<Music data={props.state.songs}/>}/>
+                        <Route path='/music/song' element={<Info/>}/>
                     </Routes>
                 </block>
             </div>

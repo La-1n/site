@@ -1,0 +1,22 @@
+.post {
+    margin: 10px;
+    padding: 10px;
+    outline: 1px solid #ddd;
+    border-top: 2px solid #fff;
+    border-radius: 5px;
+    background: lightseagreen;
+}
+
+.time {
+    margin: 5px;
+    display: inline-block;
+    color: white;
+    background: darkblue;
+    box-shadow: 1px 1px white;
+}
+
+.text {
+    margin: 10px;
+    color: white;
+    text-shadow: 1px 1px black;
+}
