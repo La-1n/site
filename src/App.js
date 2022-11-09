@@ -10,7 +10,7 @@ import News from "./components/News/News";
 import Home from "./components/Home/Home";
 import Info from "./components/Music/Info/Info";
 
-const App = () => {
+const App = (props) => {
     return (
         <BrowserRouter>
             <div className="site">
@@ -20,7 +20,7 @@ const App = () => {
                     <Routes className='root-content'>
                         <Route path='/' element={<Home />}/>
                         <Route path='/news' element={<News />}/>
-                        <Route path='/music' element={<Music />}/>
+                        <Route path='/music' element={<Music data={props.songsData} />}/>
                         <Route path='/music/song' element={<Info />}/>
                     </Routes>
                 </block>

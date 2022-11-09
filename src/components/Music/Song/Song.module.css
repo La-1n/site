@@ -12,7 +12,7 @@
 .song img {
     box-sizing: border-box;
     width: 100px;
-    border: white solid;
+    border: white double;
 }
 
 .title {
