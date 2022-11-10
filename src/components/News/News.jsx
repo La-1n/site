@@ -4,20 +4,25 @@ import Post from './Post/Post';
 
 const News = (props) => {
     //Data
-    let posts = props.data.map(post => <Post time={post.time} text={post.text}/>).reverse();
+    let posts = props.newsPage.posts.map(post => <Post time={post.time} text={post.text}/>).reverse();
 
     //Ref
     let newPostElement = React.createRef();
 
     //Functions
-    let addPost = () => {
-        props.addPost(newPostElement.current.value)
-    }
+    let addPost = () => props.addPost();
+
+    let textAreaOnChange = () => props.updateNewPostTextArea(newPostElement.current.value)
 
     return (
         <div className={style.news}>
             <div className={style.title}>НОВОСТИ</div>
-            <div className={style.textarea}><textarea ref={newPostElement}/></div>
+            <hr/>
+            <div className={style.textarea}>
+                <textarea onChange={textAreaOnChange}
+                          ref={newPostElement}
+                          value={props.newsPage.textarea}/>
+            </div>
             <button onClick={addPost}>опубликовать</button>
             {posts}
         </div>

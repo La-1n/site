@@ -19,8 +19,8 @@ const App = (props) => {
                     <Menu/>
                     <Routes className='root-content'>
                         <Route path='/' element={<Home/>}/>
-                        <Route path='/news' element={<News data={props.state.posts} addPost={props.addPost}/>}/>
-                        <Route path='/music' element={<Music data={props.state.songs}/>}/>
+                        <Route path='/news' element={<News newsPage={props.state.newsPage} addPost={props.addPost} updateNewPostTextArea={props.updateNewPostTextArea}/>}/>
+                        <Route path='/music' element={<Music songs={props.state.songs}/>}/>
                         <Route path='/music/song' element={<Info/>}/>
                     </Routes>
                 </div>

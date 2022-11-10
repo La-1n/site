@@ -2,22 +2,24 @@
     position: relative;
     outline: 1px solid #ddd;
     border-top: 2px solid #fff;
-    margin-top: 10px;
+    box-shadow: 0 2px black;
+    margin: 10px;
     padding: 10px;
-    background-color: lightseagreen;
+    background-color: rgb(49, 154, 82);
     display: flex;
     border-radius: 5px;
 }
 
 .song img {
     box-sizing: border-box;
-    width: 100px;
+    width: 60px;
     border: white double;
 }
 
 .title {
     margin: 10px;
     color: white;
+    text-shadow: 0 1px 0 black;
 }
 
 .info {
@@ -27,5 +29,16 @@
 }
 
 .info a {
+    padding: 2px;
+    text-decoration: none;
     color: white;
+    text-shadow: 0 1px 0 black;
+}
+
+.info a:hover {
+    text-decoration: underline;
+}
+
+.infoZ a:active {
+    text-shadow: 0 -1px 0 black;
 }

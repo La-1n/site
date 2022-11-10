@@ -5,16 +5,25 @@ import postsData from "./posts";
 
 let state = {
     songs: songsData,
-    posts: postsData
+    newsPage: {
+        posts: postsData,
+        textarea: ''
+    }
 }
 
-export let addPost = (text) => {
+export let addPost = () => {
     let newPost = {
         time: new Date().toLocaleString(),
-        text: text
+        text: state.newsPage.textarea
     };
 
-    state.posts.push(newPost);
+    state.newsPage.posts.push(newPost);
+    state.newsPage.textarea = '';
+    rerenderTree(state);
+}
+
+export let updateNewPostTextArea = (text) => {
+    state.newsPage.textarea = text
     rerenderTree(state);
 }
 

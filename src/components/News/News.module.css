@@ -3,13 +3,14 @@
     border-top: 2px solid #fff;
     margin: 5px;
     padding: 10px;
-    background: lightcoral;
+    background: rgb(232, 126, 126);
     border-radius: 10px;
 }
 
 .title {
     text-align: center;
-    text-shadow: 1px 1px white;
+    color: white;
+    text-shadow: 1px 1px black;
 }
 
 .textarea {
@@ -21,11 +22,18 @@ textarea {
     box-sizing: border-box;
     width: 100%;
     height: 100%;
-    padding: 10px;
+    padding: 15px;
     outline: 1px solid #ddd;
     border-top: 2px solid #fff;
-    background: lightseagreen;
+    background: rgba(0, 0, 0, 0.3);
+    text-shadow: 0 1px 0 black;
+    font-size: 16px;
     color: white;
+}
+
+textarea::selection {
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
 }
 
 button {

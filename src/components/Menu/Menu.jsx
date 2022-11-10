@@ -6,6 +6,7 @@ const Menu = () => {
     return (
         <div className={style.menu}>
             <div className={style.title}>МЕНЮ</div>
+            <hr/>
             <div className={style.item}>
                 <NavLink to="/">Главная</NavLink>
             </div>

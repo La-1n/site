@@ -3,11 +3,12 @@
     border-top: 2px solid #fff;
     margin: 5px;
     padding: 10px;
-    background-color: lightgreen;
+    background-color: rgb(59, 176, 111);
     border-radius: 10px;
 }
 
 .title {
-    text-shadow: 1px 1px white;
     text-align: center;
+    color: white;
+    text-shadow: 1px 1px black;
 }
