@@ -1,5 +1,3 @@
-import {rerenderTree} from "../render";
-
 import songsData from './songs'
 import postsData from "./posts";
 
@@ -11,7 +9,9 @@ let state = {
     }
 }
 
-export let addPost = () => {
+let rerenderTree;
+
+export const addPost = () => {
     let newPost = {
         time: new Date().toLocaleString(),
         text: state.newsPage.textarea
@@ -19,12 +19,14 @@ export let addPost = () => {
 
     state.newsPage.posts.push(newPost);
     state.newsPage.textarea = '';
-    rerenderTree(state);
+    rerenderTree();
 }
 
-export let updateNewPostTextArea = (text) => {
+export const updateNewPostTextArea = (text) => {
     state.newsPage.textarea = text
-    rerenderTree(state);
+    rerenderTree();
 }
+
+export const subscribe = (observer) => rerenderTree = observer;
 
 export default state
